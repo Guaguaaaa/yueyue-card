@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songyi — Connect With Me</title>
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Hi, I'm Songyi. Pick your favourite app to stay in touch — Instagram, WhatsApp, WeChat, and more.">
+  <meta name="author" content="Songyi">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+  <link rel="apple-touch-icon" href="assets/avatar.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Songyi — Connect With Me">
+  <meta property="og:description" content="Hi, I'm Songyi. Pick your favourite app to stay in touch.">
+  <meta property="og:image" content="assets/avator.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Songyi — Connect With Me">
+  <meta name="twitter:description" content="Hi, I'm Songyi. Pick your favourite app to stay in touch.">
+  <meta name="twitter:image" content="assets/avator.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <img src="assets/avatar.jpg" alt="Songyi" class="profile-pic">
+
+  <h1 class="name" data-translate-key="greeting">Hi, I'm Songyi</h1>
+  <p class="tagline" data-translate-key="tagline">Creative · Curious · Connected</p>
+
+  <div class="language-switcher">
+    <button onclick="changeLanguage('en')" class="lang-btn active" data-lang="en">EN</button>
+    <button onclick="changeLanguage('zh')" class="lang-btn" data-lang="zh">中</button>
+    <button onclick="changeLanguage('es')" class="lang-btn" data-lang="es">ES</button>
+    <button onclick="changeLanguage('ko')" class="lang-btn" data-lang="ko">한</button>
+  </div>
+
+  <p class="bio" data-translate-key="bio">Nice to meet you!<br>Pick your favourite app to stay in touch.</p>
+
+  <div class="group-title"><span data-translate-key="title_social">Social</span></div>
+  <div class="links-group">
+    <a href="https://www.instagram.com/songyi20021011/?hl=en" class="link-button">
+      <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/13108060870" class="link-button">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <div class="link-button" onclick="copyToClipboard('songyiyu.', this)">
+      <i class="fa-brands fa-discord"></i>
+      <span data-original-text="Discord">Discord</span>
+    </div>
+    <div class="link-button" onclick="copyToClipboard('yusongyi1011', this)">
+      <i class="fa-brands fa-weixin"></i>
+      <span data-original-text="WeChat" data-translate-key="btn_wechat">WeChat</span>
+    </div>
+  </div>
+
+  <div class="group-title"><span data-translate-key="title_professional">Professional</span></div>
+  <div class="links-group">
+    <a href="mailto:yusongyi1011@gmail.com" class="link-button">
+      <i class="fa-solid fa-envelope"></i>
+      <span data-translate-key="btn_email">Email Me</span>
+    </a>
+    <a href="me.vcf" class="link-button" download>
+      <i class="fa-solid fa-address-card"></i>
+      <span data-translate-key="btn_save_contact">Save Contact</span>
+    </a>
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
